@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="p_play()">
+    
+
+    <!-- <p id="demo"></p> -->
+    <audio id="myAudio" autoplay>
+        <source src="mp3/Eminem.mp3" type="audio/mpeg" autoplay>
+    </audio>
+
+    <audio id="myAudio2" autoplay>
+        <source src="mp3/Venom.mp3" type="audio/mpeg" autoplay>
+    </audio>
+    
+
+    <!-- godzilla -->
+    <img onclick="p_play()" width="150px" src="https://wavwax.com/wp-content/uploads/2020/03/Godzilla-Eminem-ft.-Juice-WRLD-Dir.-by-_ColeBennett_.jpg" alt="">
+    <img onclick="p_ause()" width="150px" height="150px" style="object-fit: cover;" src="https://www.eminem.pro/wp-content/uploads/2020/03/ESvCptrWsAAQa3L.jpg" alt="">
+    
+
+    <!-- venum -->
+    <img onclick="p_play_venum()" width="150px" height="150px" style="object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3BB8kaZJwAe_Som5U79rqF3udfGUwf-sGTJbwksaJ1jK4oavFYeMaaWbnm2DZ3AiW2I&usqp=CAU" alt="">
+    
+    <form method="get" action="../DYK_ADNSU.pdf">
+        <button type="submit">
+            <a download="true" href="../DYK_ADNSU.pdf">pdf</a>
+        </button>
+     </form>
+    
+
+
+</body>
+</html>
+<!-- <script src="js/index.js"></script> -->
+<script src="js/sc.js"></script>
+
+
+<script>
+
+    function p_play(){
+        var x = document.getElementById("myAudio2")
+        x.pause()
+        var x = document.getElementById("myAudio")
+        x.play()
+    }
+
+    function p_ause(){
+        var x = document.getElementById("myAudio")
+       x.pause()
+    }
+
+    function p_play_venum(){
+
+        var x = document.getElementById("myAudio")
+        x.pause()
+
+        var x = document.getElementById("myAudio2")
+        x.play()
+    }
+
+    // function p_ause_venum(){
+    //    var x = document.getElementById("myAudio2")
+    //    x.play()
+    // }
+   
+    </script>
+
